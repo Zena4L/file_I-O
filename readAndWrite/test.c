@@ -1,10 +1,19 @@
 #include <stdio.h>
-int main(void)
+#include <string.h>
+int main()
 {
-    int ch;
-    FILE *fp = fopen("haiku.txt","r");
-    while ( (ch =fgetc(fp)) != EOF)
-        printf("%c",ch);
-    
+    FILE *fptr = fopen("testF.txt","w");
+    char str[100];
+
+    fgets(str,strlen(str),fptr);
+    printf("%s",str);
+
+
+
+    fclose(fptr);
+
+ 
+
+
     return 0;
 }

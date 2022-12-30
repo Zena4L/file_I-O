@@ -30,10 +30,6 @@ int main(void)
 
    }
 
-   
-
-    
-
     return reval;
 }
 void charReadWrite(FILE *fin,FILE *fout)
